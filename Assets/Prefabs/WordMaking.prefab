@@ -288,14 +288,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
-  targetWord: qas
+  targetWords: []
   slots: {fileID: 8498969038094406057}
   tiles: {fileID: 372356822507055665}
   tilePrefab: {fileID: 8610482936917983031, guid: b5a467df133754a02ac69e46b113760d, type: 3}
-  lettersToAdd:
-  - s
-  - a
-  - q
+  lettersToAdd: []
 --- !u!1 &4697929800945397506
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,10 +326,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 241796076319693423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 914.4, y: -100}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6922172987177989847
 CanvasRenderer:
@@ -551,10 +548,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 241796076319693423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 674.4, y: -100}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8649070055048817749
 CanvasRenderer:

@@ -31,7 +31,8 @@ public class Player : MonoBehaviour
         }
         if (isActive) {
             if (Input.GetButtonDown("Jump") && IsGrounded()) {
-            rb.linearVelocityY = jump;
+                rb.linearVelocityY = jump;
+                AudioManager.instance.PlaySound("Jump");
             }
 
             horizontal = Input.GetAxisRaw("Horizontal");
@@ -53,4 +54,5 @@ public class Player : MonoBehaviour
         otherForm.GetComponent<Player>().isActive = true;
         otherForm.transform.position = this.transform.position;
     }
+
 }

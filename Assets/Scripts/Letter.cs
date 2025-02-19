@@ -9,6 +9,7 @@ public class Letter : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     public string letter;
+    public LetterSlot slot;
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -17,7 +18,12 @@ public class Letter : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
+        AudioManager.instance.PlaySound("Letter Grab");
         canvasGroup.blocksRaycasts = false;
+        if (slot != null) {
+            slot.letter = "";
+            slot = null;
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -27,6 +33,7 @@ public class Letter : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        AudioManager.instance.PlaySound("Letter Place");
         canvasGroup.blocksRaycasts = true;
     }
 

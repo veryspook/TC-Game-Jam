@@ -5,12 +5,19 @@ using UnityEngine.Video;
 public class WordManager : MonoBehaviour
 {
     [SerializeField] private Canvas canvas;
-    public string targetWord;
+    public static WordManager instance;
+    public List<string> targetWords;
     private string currentWord;
     public GameObject slots;
     public GameObject tiles;
     public GameObject tilePrefab;
     public List<string> lettersToAdd = new List<string>();
+
+    void Awake()
+    {
+        instance = this;
+        
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnEnable()
@@ -18,11 +25,7 @@ public class WordManager : MonoBehaviour
         CreateTiles();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     public void AddLetter(string letter) {
         lettersToAdd.Add(letter);
     }
@@ -41,8 +44,10 @@ public class WordManager : MonoBehaviour
             currentWord += letterSlot.letter;
         }
         Debug.Log(currentWord);
-        if (targetWord.ToUpper() == currentWord) { 
+        foreach(string target in targetWords)
+        if (target.ToUpper() == currentWord) { 
             //trigger win scren
+            return;
         } else {
             //show incorrect text
         }
