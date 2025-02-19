@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Book
+  m_Controller: {fileID: 9100000, guid: 66ac789fa77e643c4ade2639decc813f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 7fa8716fbb54b4c51855a004fa24d94d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7fa8716fbb54b4c51855a004fa24d94d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 5d0dababa0f1b4a5ca90797a5e033a81, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5d0dababa0f1b4a5ca90797a5e033a81, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1d046d3e26f2e45d385e98f6e9cb7c14, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1d046d3e26f2e45d385e98f6e9cb7c14, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 62f27489945ef48089cfbbc4f264feb1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 62f27489945ef48089cfbbc4f264feb1, type: 2}

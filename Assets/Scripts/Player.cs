@@ -1,10 +1,12 @@
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.InputSystem.OSX;
 
 public class Player : MonoBehaviour
 {
     //movement code ported from Brackets 2D movement video
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Animator anim;
     public bool isActive;
     private float horizontal;
     public float speed = 5f;
@@ -30,6 +32,13 @@ public class Player : MonoBehaviour
             SwitchForm();
         }
         if (isActive) {
+            anim.SetFloat("verticalVelocity", rb.linearVelocityY);
+            anim.SetBool("onGround", IsGrounded());
+            if (rb.linearVelocityX != 0) {
+                anim.SetBool("walking", true);
+            } else {
+                anim.SetBool("walking", false);
+            }
             if (Input.GetButtonDown("Jump") && IsGrounded()) {
                 rb.linearVelocityY = jump;
                 AudioManager.instance.PlaySound("Jump");
@@ -38,9 +47,9 @@ public class Player : MonoBehaviour
             horizontal = Input.GetAxisRaw("Horizontal");
             rb.linearVelocityX = horizontal * speed;
             if (horizontal < 0f) {
-                spriteRenderer.flipX = false;
-            } else if (horizontal > 0f) {
                 spriteRenderer.flipX = true;
+            } else if (horizontal > 0f) {
+                spriteRenderer.flipX = false;
             }
         }
     }
