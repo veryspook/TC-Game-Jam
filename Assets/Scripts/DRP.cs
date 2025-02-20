@@ -1,23 +1,22 @@
 using System.Collections;
-using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Tile : Collectable
+public class DRP : Collectable
 {
     public GameObject partSys;
-    public string letter;
-    public TextMeshPro letterText;
-    public void Start() {
-        letterText.text = letter;
-    }
-
     public override void OnCollect()
-    {   
+    {
         base.OnCollect();
         StartCoroutine("PlayParticles");
-        WordManager.instance.AddLetter(letter);
+        UIManager.instance.AddDRP(gameObject);
+        gameObject.SetActive(false);
         AudioManager.instance.PlaySound("Letter Collect");
-        gameObject.transform.parent.gameObject.SetActive(false);
+
+    }
+    public IEnumerator Respawn() {
+        yield return new WaitForSeconds(2);
+        gameObject.SetActive(true);
     }
     public IEnumerator PlayParticles() {
         GameObject particles = Instantiate(partSys);

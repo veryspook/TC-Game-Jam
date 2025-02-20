@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7291217a66ed4d1a8dec0ad16133ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  partSys: {fileID: 7094489338489423842, guid: 9e8f9e2fa8c32403b8af21b2e4aac7fa, type: 3}
   letter: A
   letterText: {fileID: 8285259022409942519}
 --- !u!1 &1553989194373741764
@@ -175,7 +176,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.72, y: 3.59, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2166809250675739436}
