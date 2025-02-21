@@ -23677,7 +23677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8262789672731437927, guid: 98763805e7100479f9bb6e1f0bf193d4, type: 3}
       propertyPath: m_text
-      value: ILLNESS?
+      value: AILMENT?
       objectReference: {fileID: 0}
     - target: {fileID: 8647295750475060257, guid: 98763805e7100479f9bb6e1f0bf193d4, type: 3}
       propertyPath: m_fontColor.b
