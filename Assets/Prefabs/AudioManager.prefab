@@ -88,7 +88,7 @@ MonoBehaviour:
     sound: {fileID: 8300000, guid: dace011b8e58048a19fd77525241c5e7, type: 3}
     volumeChangeRelative: 0
   - name: Library
-    sound: {fileID: 8300000, guid: faf4abc07d23844988336ca9eea2e4c5, type: 3}
+    sound: {fileID: 8300000, guid: 46cffd925ec8381b7b822617aeb1c95d, type: 3}
     volumeChangeRelative: 0
 --- !u!82 &1148822466925258509
 AudioSource:
