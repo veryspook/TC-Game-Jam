@@ -9,7 +9,12 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
     public string trackToPlay;
 
-    [Serializable] 
+    // Smooth looping workaround
+    private AudioSource[] musicSources;
+    private int currentMusicSource = 0;
+    private double nextTime = 0.0;
+
+    [Serializable]
     public struct Sound {
         public string name;
         public AudioClip sound;
@@ -17,6 +22,7 @@ public class AudioManager : MonoBehaviour
     }
     public Sound[] sounds;
     public Sound[] tracks;
+
     void Awake()
     {
         instance = this;
@@ -28,7 +34,18 @@ public class AudioManager : MonoBehaviour
         }*/
         PlayMusic(trackToPlay);
     }
-    
+
+    void Update() {
+        if (trackToPlay != "Library") {
+            return;
+        }
+        if (AudioSettings.dspTime + 1.0f > nextTime) {
+            currentMusicSource = 1 - currentMusicSource;
+            musicSources[currentMusicSource].PlayScheduled(nextTime);
+            nextTime += 60.0f * 128.0f / 132.0f;
+        }
+    }
+
     public void PlaySound(string name) {
         Sound s = Array.Find(sounds, x => x.name == name);
         if (s.name == "") {
@@ -42,13 +59,23 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayMusic(string track){
+    public void PlayMusic(string track) {
         Sound s = Array.Find(tracks, x => x.name == track);
         if (s.name == "") {
             Debug.Log("Track " + track + "not found");
         } else {
             musicSource.clip = s.sound;
-            musicSource.Play();
+            if (track != "Library") {
+                musicSource.Play();
+            } else { // Smooth looping
+                musicSource.loop = false;
+                musicSources = new AudioSource[2];
+                musicSources[0] = musicSource;
+                musicSources[1] = gameObject.AddComponent<AudioSource>();
+                musicSources[1].clip = s.sound;
+                musicSources[1].volume = musicSource.volume;
+                nextTime = AudioSettings.dspTime + 1.0f;
+            }
         }
     }
 
