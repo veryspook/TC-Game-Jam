@@ -1,15 +1,25 @@
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject wordMenu;
     public GameObject winMenu;
+
+    //tile ui
+    public int tilesCollected = 0;
+    public Transform tilesObject;
+    public TextMeshProUGUI tilesText;
+    public TextMeshProUGUI maxTilesText;
+
+
     public TextMeshProUGUI winWord;
     public TextMeshProUGUI winWord2;
     public bool win = false;
@@ -21,6 +31,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject drpUI;
     // Update is called once per frame
     void Start() {
+        maxTilesText.text = tilesObject.GetComponentsInChildren<Tile>().Count().ToString();
+        tilesText.text = tilesCollected.ToString();
         instance = this;
         WordManager.instance = wordManager;
         if (drpUI != null) {
@@ -75,6 +87,10 @@ public class UIManager : MonoBehaviour
         extraJumps--;
         drpUI.GetComponentInChildren<TextMeshProUGUI>().text = extraJumps.ToString();
         StartCoroutine(drpsToRespawn.Pop().GetComponent<DRP>().Respawn());
+    }
+    public void CollectTile() {
+        tilesCollected++;
+        tilesText.text = tilesCollected.ToString();
     }
     public void TogglePause() {
         if (pauseMenu.activeSelf) {

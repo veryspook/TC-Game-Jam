@@ -17,6 +17,7 @@ public class Tile : Collectable
         StartCoroutine("PlayParticles");
         WordManager.instance.AddLetter(letter);
         AudioManager.instance.PlaySound("Letter Collect");
+        UIManager.instance.CollectTile();
         gameObject.transform.parent.gameObject.SetActive(false);
     }
     public IEnumerator PlayParticles() {

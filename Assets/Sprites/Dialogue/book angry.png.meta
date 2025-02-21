@@ -116,12 +116,12 @@ TextureImporter:
       name: book angry_0
       rect:
         serializedVersion: 2
-        x: 35
+        x: 0
         y: 0
-        width: 308
-        height: 398
+        width: 404
+        height: 404
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2750ec267a9ce4413bb8a868d957b855
     internalID: 0
     vertices: []
     indices: 
