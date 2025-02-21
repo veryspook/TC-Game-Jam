@@ -5,8 +5,7 @@ public class Player : MonoBehaviour
 {
     //movement code ported from Brackets 2D movement video
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] public Animator anim;
-    public bool isActive;
+    [SerializeField] public Animator anim;    public bool isActive;
     private float horizontal;
     public float speed = 5f;
     public float jump = 16f;
@@ -29,13 +28,16 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //this line is only here bc it keeps deassigning itself i dont know why
         anim = GetComponent<Animator>();
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        if (DialogueManager.ended) {        
+        if (DialogueManager.ended && !UIManager.instance.win) {        
             horizontal = Input.GetAxisRaw("Horizontal");
             rb.linearVelocityX = horizontal * speed;     
             if (Input.GetKeyDown(KeyCode.Q)) {
                 SwitchForm();
+                AudioManager.instance.PlaySound("Transform");
             }
             if (isActive) {
                 anim.SetFloat("verticalVelocity", rb.linearVelocityY);

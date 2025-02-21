@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private AudioSource soundSource;
     public static AudioManager instance;
+    public string trackToPlay;
 
     [Serializable] 
     public struct Sound {
@@ -18,12 +19,14 @@ public class AudioManager : MonoBehaviour
     public Sound[] tracks;
     void Awake()
     {
-        if (instance == null){
+        instance = this;
+        /*if (instance == null){
             instance = this;
             //DontDestroyOnLoad(gameObject);
         } else{
             Destroy(gameObject);
-        }
+        }*/
+        PlayMusic(trackToPlay);
     }
     
     public void PlaySound(string name) {
@@ -31,7 +34,11 @@ public class AudioManager : MonoBehaviour
         if (s.name == "") {
             Debug.Log("Sound " + name + "not found");
         } else {
-            PlayClipAtPoint(s.sound, Camera.main.transform.position, 1 + s.volumeChangeRelative).spatialBlend = 0;
+            Debug.Log("playing sound");
+            soundSource.clip = s.sound;
+            soundSource.enabled = true;
+            soundSource.Play();
+            //PlayClipAtPoint(s.sound, Camera.main.transform.position, 1 + s.volumeChangeRelative).spatialBlend = 0;
         }
     }
 

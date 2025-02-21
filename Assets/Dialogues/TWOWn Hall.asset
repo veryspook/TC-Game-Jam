@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1df64b6e1c7644983b198e70a36acb29, type: 3}
+  m_Name: TWOWn Hall
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - speaker: 1
+    characterSprite: {fileID: 2110038132830413585, guid: c5a73681a271c42cebe936f7ec3bccbe, type: 3}
+    dialogueText: This place is so fancy...
+  - speaker: 1
+    characterSprite: {fileID: -5164880323477276691, guid: 60484f188dd6d4e0fb1df62aa5e881b8, type: 3}
+    dialogueText: "They\u2019d totally not let me play with my rubber balloons inside! "
+  - speaker: 0
+    characterSprite: {fileID: 8331288377412245559, guid: ce6b7e47ce7f2471ba49116743e3568c, type: 3}
+    dialogueText: "And so it\u2019d be best for you to behave, okay? Don\u2019t want
+      any concerned looks around here. "
+  - speaker: 0
+    characterSprite: {fileID: -7839149850802046720, guid: 0110960d35cbe4cafb597c543b55ad80, type: 3}
+    dialogueText: "Although you\u2019re not wrong, it feels kind of alienating... "
+  - speaker: 1
+    characterSprite: {fileID: 2568464782880266421, guid: f5015b60e3734495d8248b4f9da7dab1, type: 3}
+    dialogueText: "Well at least I don\u2019t sound like the people around here,
+      they\u2019re just blabbering loads! "
+  - speaker: 0
+    characterSprite: {fileID: -8196679115886065135, guid: 178eb54b58f3344f9bc3a82642eac7a1, type: 3}
+    dialogueText: ...
+  - speaker: 1
+    characterSprite: {fileID: -8003790976988360835, guid: d221a70d0406d4b52ba88b6eacbcff99, type: 3}
+    dialogueText: 'So what was it that they were issuing around here! Tee Our Peas? '
+  - speaker: 0
+    characterSprite: {fileID: 2364650450452411228, guid: 7f3da727dc83b4e5f958d8c7492f0a0f, type: 3}
+    dialogueText: "*D*RPs. Please, we\u2019re not that prestigious. "
+  - speaker: 0
+    characterSprite: {fileID: -7839149850802046720, guid: 0110960d35cbe4cafb597c543b55ad80, type: 3}
+    dialogueText: "It\u2019s a type of currency and grants the bearer an ability,
+      among other things. "
+  - speaker: 1
+    characterSprite: {fileID: 2110038132830413585, guid: c5a73681a271c42cebe936f7ec3bccbe, type: 3}
+    dialogueText: 'Ooooh, whutazidoo? '
+  - speaker: 0
+    characterSprite: {fileID: 3485878760844826252, guid: 2787c889087914a4ea35b2a532b8c882, type: 3}
+    dialogueText: 'Well for starters, it grants a one-time use double jump.  '
+  - speaker: 1
+    characterSprite: {fileID: 2110038132830413585, guid: c5a73681a271c42cebe936f7ec3bccbe, type: 3}
+    dialogueText: ...
+  - speaker: 1
+    characterSprite: {fileID: 315566620818578707, guid: 539104b9de29d455fa6480a2bf7d114e, type: 3}
+    dialogueText: ..?
+  - speaker: 0
+    characterSprite: {fileID: 8331288377412245559, guid: ce6b7e47ce7f2471ba49116743e3568c, type: 3}
+    dialogueText: 'What are you thinking of doing? '
+  - speaker: 1
+    characterSprite: {fileID: 2568464782880266421, guid: f5015b60e3734495d8248b4f9da7dab1, type: 3}
+    dialogueText: 'Do you see those chandeliers, Meredith...  '
+  - speaker: 0
+    characterSprite: {fileID: -1331986133856433416, guid: 855f523ab2c2c4be8a80b0fa4445b95d, type: 3}
+    dialogueText: 'You are absolutely NOT swinging atop those things. '
+  - speaker: 1
+    characterSprite: {fileID: -5164880323477276691, guid: 60484f188dd6d4e0fb1df62aa5e881b8, type: 3}
+    dialogueText: "AWWWWW, but it\u2019d be so much fun! Think about the adrenaline
+      rush from security chasing us... "
+  - speaker: 1
+    characterSprite: {fileID: -8003790976988360835, guid: d221a70d0406d4b52ba88b6eacbcff99, type: 3}
+    dialogueText: "Oh well, focusing on our task comes first. We\u2019re so close
+      to finishing our response! "
+  - speaker: 0
+    characterSprite: {fileID: -7839149850802046720, guid: 0110960d35cbe4cafb597c543b55ad80, type: 3}
+    dialogueText: 'Huh, never realized we were at the final stretch. '
+  - speaker: 0
+    characterSprite: {fileID: 3485878760844826252, guid: 2787c889087914a4ea35b2a532b8c882, type: 3}
+    dialogueText: "Promise that we\u2019ll make the best TWOW response the world
+      has ever conceived? "
+  - speaker: 1
+    characterSprite: {fileID: 2568464782880266421, guid: f5015b60e3734495d8248b4f9da7dab1, type: 3}
+    dialogueText: You BETCHA!

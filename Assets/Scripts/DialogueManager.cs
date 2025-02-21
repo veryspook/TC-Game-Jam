@@ -18,11 +18,15 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField] private Image left; 
     [SerializeField] private Image right;
+    [SerializeField] private Image box;
+    [SerializeField] private Sprite humanBox;
+    [SerializeField] private Sprite bookBox;
 
 
 
-    private void Start()
+    private void Awake()
     {   
+        Time.timeScale = 1;
         ended = false;
         ShowDialogue();
     }
@@ -73,15 +77,19 @@ private void ShowDialogue() {
         return;
     }
 
-    if (currentEntry.speaker == DialogueData.DialogueEntry.Speaker.Human) {
+    if (currentEntry.speaker == DialogueData.DialogueEntry.Speaker.Book) {
+        box.sprite = bookBox;
         left.sprite = currentEntry.characterSprite;
         left.color = Color.white;
         right.color = new Color(0.8f,0.8f,0.8f);
+        dialogueText.color = new Color(0.1134745f, 0.1778028f, 0.3207547f);
     }
-    if (currentEntry.speaker == DialogueData.DialogueEntry.Speaker.Book) {
+    if (currentEntry.speaker == DialogueData.DialogueEntry.Speaker.Human) {
+        box.sprite = humanBox;
         right.sprite = currentEntry.characterSprite;
         left.color = new Color(0.8f,0.8f,0.8f);
         right.color = Color.white;
+        dialogueText.color = new Color(0.8679245f, 0.8605164f, 0.7901388f);
     }
 
     completeText = currentEntry.dialogueText;

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueEntries:
   - speaker: 0
-    characterSprite: {fileID: 859337930172104790, guid: 1f44f054929ee4c099f7a5aa2e092d72, type: 3}
+    characterSprite: {fileID: 2364650450452411228, guid: 7f3da727dc83b4e5f958d8c7492f0a0f, type: 3}
     dialogueText: Test 1
   - speaker: 1
     characterSprite: {fileID: -7120593538532165089, guid: 4cf79de94d5e74e8c8c25eb4efc11e6a, type: 3}

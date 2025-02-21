@@ -8,7 +8,7 @@ public class Tile : Collectable
     public string letter;
     public TextMeshPro letterText;
     public void Start() {
-        letterText.text = letter;
+        letterText.text = letter.ToUpper();
     }
 
     public override void OnCollect()

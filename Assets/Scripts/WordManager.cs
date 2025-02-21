@@ -44,12 +44,13 @@ public class WordManager : MonoBehaviour
             currentWord += letterSlot.letter;
         }
         Debug.Log(currentWord);
-        foreach(string target in targetWords)
-        if (target.ToUpper() == currentWord) { 
-            //trigger win scren
-            return;
-        } else {
-            //show incorrect text
+        foreach(string target in targetWords) {
+            if (target.ToUpper() == currentWord.ToUpper()) { 
+                UIManager.instance.CompleteLevel(currentWord.ToUpper());
+                AudioManager.instance.PlaySound("Correct");
+                return;
+            }
         }
+        AudioManager.instance.PlaySound("Wrong");
     }
 }

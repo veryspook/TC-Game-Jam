@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1df64b6e1c7644983b198e70a36acb29, type: 3}
+  m_Name: City
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - speaker: 1
+    characterSprite: {fileID: -8003790976988360835, guid: d221a70d0406d4b52ba88b6eacbcff99, type: 3}
+    dialogueText: City!
+  - speaker: 0
+    characterSprite: {fileID: 2364650450452411228, guid: 7f3da727dc83b4e5f958d8c7492f0a0f, type: 3}
+    dialogueText: Yes. City.
+  - speaker: 1
+    characterSprite: {fileID: 1339376749695298326, guid: b237e8be158d14620ae1a5d11f855225, type: 3}
+    dialogueText: "Alright, all we gotta do is find a bunch of letters kicking around,
+      make a really cool response\u2026 "
+  - speaker: 1
+    characterSprite: {fileID: 2568464782880266421, guid: f5015b60e3734495d8248b4f9da7dab1, type: 3}
+    dialogueText: "And huzzah! We\u2019ve succeeded! "
+  - speaker: 0
+    characterSprite: {fileID: 2364650450452411228, guid: 7f3da727dc83b4e5f958d8c7492f0a0f, type: 3}
+    dialogueText: "That\u2019s the plan. Hope you\u2019re not afraid of heights. "
+  - speaker: 1
+    characterSprite: {fileID: 859337930172104790, guid: 1f44f054929ee4c099f7a5aa2e092d72, type: 3}
+    dialogueText: 'Huh? Heights? Why heights? '
+  - speaker: 0
+    characterSprite: {fileID: -7839149850802046720, guid: 0110960d35cbe4cafb597c543b55ad80, type: 3}
+    dialogueText: 'Where are the letters, Panko? '
+  - speaker: 1
+    characterSprite: {fileID: -7120593538532165089, guid: 4cf79de94d5e74e8c8c25eb4efc11e6a, type: 3}
+    dialogueText: "Uh\u2026 at the tops of the towers? "
+  - speaker: 0
+    characterSprite: {fileID: 3485878760844826252, guid: 2787c889087914a4ea35b2a532b8c882, type: 3}
+    dialogueText: "Good! Which means that if we make even one little mistake while
+      traversing\u2026 "
+  - speaker: 0
+    characterSprite: {fileID: 3485878760844826252, guid: 2787c889087914a4ea35b2a532b8c882, type: 3}
+    dialogueText: "We\u2019ll fall hundreds of feet towards what will certainly be
+      a very painful and gruesome death! "
+  - speaker: 0
+    characterSprite: {fileID: -9073978916207458464, guid: 2b4cee1f6ff7249b9bae3fe80723b133, type: 3}
+    dialogueText: "So don\u2019t do anything stupid, okay?"
+  - speaker: 1
+    characterSprite: {fileID: 315566620818578707, guid: 539104b9de29d455fa6480a2bf7d114e, type: 3}
+    dialogueText: "Heh, don\u2019t worry. It\u2019s gonna take more than a little
+      height to throw me off my game! "
+  - speaker: 0
+    characterSprite: {fileID: 8331288377412245559, guid: ce6b7e47ce7f2471ba49116743e3568c, type: 3}
+    dialogueText: "Then I\u2019m sure you won\u2019t mind me turning into you if
+      we fall so you\u2019re the only one who feels the impact. "
+  - speaker: 1
+    characterSprite: {fileID: -5164880323477276691, guid: 60484f188dd6d4e0fb1df62aa5e881b8, type: 3}
+    dialogueText: "H-hey! That\u2019s not funny! "

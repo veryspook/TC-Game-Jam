@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1df64b6e1c7644983b198e70a36acb29, type: 3}
+  m_Name: Library
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - speaker: 1
+    characterSprite: {fileID: 2110038132830413585, guid: c5a73681a271c42cebe936f7ec3bccbe, type: 3}
+    dialogueText: 'Sure is a lotta books around here. '
+  - speaker: 0
+    characterSprite: {fileID: -807819473478639531, guid: e37971d38b8354caa87d5257626352ca, type: 3}
+    dialogueText: ...
+  - speaker: 1
+    characterSprite: {fileID: -1886591978421009112, guid: 242b7187e7db94128b4c007680093ee9, type: 3}
+    dialogueText: "I mean, I know it\u2019s a library, but do we really need THIS
+      much literature in one place? "
+  - speaker: 0
+    characterSprite: {fileID: -807819473478639531, guid: e37971d38b8354caa87d5257626352ca, type: 3}
+    dialogueText: ...............
+  - speaker: 1
+    characterSprite: {fileID: -7120593538532165089, guid: 4cf79de94d5e74e8c8c25eb4efc11e6a, type: 3}
+    dialogueText: "Just feels like overkill, y\u2019know? Sometimes you gotta know
+      when to downsize and make cuts. "
+  - speaker: 0
+    characterSprite: {fileID: -9073978916207458464, guid: 2b4cee1f6ff7249b9bae3fe80723b133, type: 3}
+    dialogueText: "I can think of one book the librarian should \u201Ccut\u201D. "
+  - speaker: 1
+    characterSprite: {fileID: 2110038132830413585, guid: c5a73681a271c42cebe936f7ec3bccbe, type: 3}
+    dialogueText: 'Sorry, I got distracted. Did you say something? '
+  - speaker: 0
+    characterSprite: {fileID: 2364650450452411228, guid: 7f3da727dc83b4e5f958d8c7492f0a0f, type: 3}
+    dialogueText: "Let\u2019s just focus on the response."
+  - speaker: 0
+    characterSprite: {fileID: -7839149850802046720, guid: 0110960d35cbe4cafb597c543b55ad80, type: 3}
+    dialogueText: 'Do you think you could maneuver through the shelves in book form? '
+  - speaker: 1
+    characterSprite: {fileID: 1339376749695298326, guid: b237e8be158d14620ae1a5d11f855225, type: 3}
+    dialogueText: "Probably. What\u2019s in it for me? "
+  - speaker: 0
+    characterSprite: {fileID: -1331986133856433416, guid: 855f523ab2c2c4be8a80b0fa4445b95d, type: 3}
+    dialogueText: "\u2026what\u2019s in it for you? "
+  - speaker: 1
+    characterSprite: {fileID: 315566620818578707, guid: 539104b9de29d455fa6480a2bf7d114e, type: 3}
+    dialogueText: "Well, yeah. If you\u2019re gonna rely on my skills, I want some
+      compensation. It\u2019s not easy being a book. "
+  - speaker: 0
+    characterSprite: {fileID: -8196679115886065135, guid: 178eb54b58f3344f9bc3a82642eac7a1, type: 3}
+    dialogueText: ...
+  - speaker: 0
+    characterSprite: {fileID: -9073978916207458464, guid: 2b4cee1f6ff7249b9bae3fe80723b133, type: 3}
+    dialogueText: "I\u2019ll sign the book-burning petition the mayor\u2019s pushing
+      so the library gets decluttered. "
+  - speaker: 1
+    characterSprite: {fileID: 2568464782880266421, guid: f5015b60e3734495d8248b4f9da7dab1, type: 3}
+    dialogueText: "Good enough for me! Let\u2019s go! "
