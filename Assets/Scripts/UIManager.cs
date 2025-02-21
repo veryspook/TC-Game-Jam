@@ -31,7 +31,7 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         if (DialogueManager.ended && !win) {
-            if (Input.GetKeyDown(KeyCode.E)) {
+            if (Input.GetKeyDown(KeyCode.E) && !pauseMenu.activeSelf) {
                 if (wordMenu.activeSelf) {
                     wordMenu.SetActive(false);
                     Time.timeScale = 1;
@@ -40,8 +40,11 @@ public class UIManager : MonoBehaviour
                     Time.timeScale = 0;
                 }
             }
-            if (Input.GetKeyDown(KeyCode.P)) {
+            if (Input.GetKeyDown(KeyCode.P) && !wordMenu.activeSelf) {
                 TogglePause();
+            } 
+            if (Input.GetKeyDown(KeyCode.R)) {
+                SceneTransition.Restart();
             } 
         }
     }
@@ -81,6 +84,9 @@ public class UIManager : MonoBehaviour
             pauseMenu.SetActive(true);
             Time.timeScale = 0;
         }
+    }
+    public bool InMenu() {
+        return wordMenu.activeSelf || pauseMenu.activeSelf;
     }
 
 }

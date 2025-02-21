@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        if (DialogueManager.ended && !UIManager.instance.win) {        
+        if (DialogueManager.ended && !UIManager.instance.win && !UIManager.instance.InMenu()) {        
             horizontal = Input.GetAxisRaw("Horizontal");
             rb.linearVelocityX = horizontal * speed;     
             if (Input.GetKeyDown(KeyCode.Q)) {

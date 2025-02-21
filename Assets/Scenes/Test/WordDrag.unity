@@ -530,6 +530,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1895159749}
+    - target: {fileID: 5360013183200652768, guid: 98763805e7100479f9bb6e1f0bf193d4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1895159749}
     - target: {fileID: 5721345403347353556, guid: 98763805e7100479f9bb6e1f0bf193d4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -610,6 +614,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7001151371949167896, guid: 98763805e7100479f9bb6e1f0bf193d4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1895159749}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

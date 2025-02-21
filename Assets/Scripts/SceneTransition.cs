@@ -33,4 +33,7 @@ public class SceneTransition : MonoBehaviour
         }
         responseText.text = "Having bred " + firstWord +  " with " + secondWord + ", performing tests delivers " + thirdWord + " diagnosis!";
     }
+    public static void Restart() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
