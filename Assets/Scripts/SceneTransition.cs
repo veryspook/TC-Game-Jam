@@ -31,7 +31,7 @@ public class SceneTransition : MonoBehaviour
             twownButton.interactable = false;
             libraryButton.interactable = false;
         }
-        responseText.text = "Having bred " + firstWord +  " with " + secondWord + ", performing tests delivers " + thirdWord + " diagnosis!";
+        responseText.text = "Having bred " + firstWord +  " with " + secondWord + ", performing tests delivers " + thirdWord + " diagnoses!";
     }
     public static void Restart() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

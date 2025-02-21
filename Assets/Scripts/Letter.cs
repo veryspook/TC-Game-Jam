@@ -12,6 +12,7 @@ public class Letter : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     public LetterSlot slot;
     void Start()
     {
+        gameObject.transform.localScale = Vector3.one;
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         GetComponentInChildren<TextMeshProUGUI>().text = letter.ToUpper();
