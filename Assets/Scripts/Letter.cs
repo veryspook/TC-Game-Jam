@@ -34,7 +34,6 @@ public class Letter : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        AudioManager.instance.PlaySound("Letter Place");
         canvasGroup.blocksRaycasts = true;
     }
 
